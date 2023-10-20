@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <!-- left section -->
+    <section class="left-section">
+        <div class="explorer">
+            <h1 class="vs-code-logo">VS Code Clone</h1>
+            <div class="explorer-btns">
+                <div id="create-file">
+                    <i class="fa-solid fa-file-circle-plus"></i>
+                </div>
+                <div id="create-folder">
+                    <i class="fa-solid fa-folder-plus"></i>
+                </div>
+                <div id="refresh-explorer">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div id="collapse-explorer">
+                    <i class="fa-solid fa-square-minus"></i>
+                </div>
+            </div>
+        </div>
+        <ul id="files">
+            <li>
+                <img src="./images/html-logo.png" /> <input type="text" value="index.html" disabled />
+                <div class="file-operation">
+                    <div class="edit-btn"><i class="fa-solid fa-pen"></i></div>
+                    <div class="delete-btn"><i class="fa-solid fa-trash"></i></div>
+                </div>
+            </li>
+            <li>
+                <img src="./images/css-logo.png" /> <input type="text" value="style.css" disabled />
+                <div class="file-operation">
+                    <div class="edit-btn"><i class="fa-solid fa-pen"></i></div>
+                    <div class="delete-btn"><i class="fa-solid fa-trash"></i></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Right Section -->
+    <section class="right-section">
+        <textarea id="text-editor" spellcheck="false"></textarea>
+    </section>
+
+    <!-- script -->
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+/* LEFT SECTION */
+
+.left-section {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(35, 35, 35);
+    padding: 40px 15px;
+}
+
+.explorer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;    
+}
+
+.vs-code-logo {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.explorer-btns,
+.file-operation {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.explorer-btns i,
+.file-operation div i {
+    opacity: 0.9;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.file-operation div i {
+    font-size: 14px;
+    opacity: 0;
+}
+
+.explorer-btns i:hover,
+.file-operation div i:hover {
+    background-color: #6a6a6a61;
+}
+
+#files li:hover .file-operation div i {
+    opacity: 1;
+}
+
+#files {
+    padding-left: 30px;
+}
+
+#files li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+
+#files li img {
+    width: 18px;
+}
+
+#files li input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+#files li input.active {
+    background-color: #fff;
+    border: 1px solid #393939;
+    color: #393939;
+}
+
+/* RIGHT SECTION */
+
+.right-section {
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#text-editor {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    background-color: rgb(61, 61, 61);
+    color: #fff;
+    overflow-y: auto;
+}
